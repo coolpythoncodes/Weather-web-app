@@ -1,68 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/a72e4c3c21.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-    <title>Weather App</title>
-</head>
-<body>
-    <main>
-        <div class="left">
-            <div class="left-info">
-                <div class="temperature">
-                    <h1>26<span>&#176;</span></h1>
-                </div>
-                <div class="additional-info">
-                    <h1 class="city">London</h1>
-                    <p class="time">10:36 - Tuesday, 22 Oct 19</p>
-                </div>
-                <div class="weather">
-                    <img src="" alt="">
-                    <p>Sunny</p>
-                </div>
-            </div>
-        </div>
-        <div class="right">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script
+			src="https://kit.fontawesome.com/a72e4c3c21.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" href="style.css" />
+		<title>Weather App</title>
+	</head>
+	<body>
+		<main>
+			<div class="left">
+				<div class="left-info">
+					<div class="temperature">
+					</div>
+					<div class="additional-info">
+						<h1 class="city"></h1>
+						<p class="time"></p>
+					</div>
+					<div class="weather">
+						<img class="weather-image" src="" alt="" />
+						<p class="weather-condition"></p>
+					</div>
+				</div>
+			</div>
+			<div class="right">
+				<div class="weather-content container">
+					<form>
+						<input type="text" placeholder="Enter Location" />
+						<button class="submit-btn" type="submit">
+							<i class="fas fa-search"></i>
+						</button>
+					</form>
+					<div class="weather-info">
+						<h1 class='weather-heading'></h1>
+						<div class="weather-data">
+							<p class="weather-description cloudy"></p>
+							<p class="weather-description-value">
+								<span class="cloud"></span> 
+							</p>
+						</div>
+						<div class="weather-data">
+							<p class="weather-description humidity-text"></p>
+							<p class="weather-description-value">
+								<span class="humidity"></span>
+							</p>
+						</div>
+						<div class="weather-data">
+							<p class="weather-description wind"></p>
+							<p class="weather-description-value">
+								<span class="wind-speed"></span> 
+							</p>
+						</div>
 
-            <!-- <div class="weather-details"> -->
-                <div class="weather-content container">
-                    <form>
-                        <input type="text" placeholder="Enter Location">
-                        <i class="fas fa-search"></i>
-                    </form>
-                    <div class="weather-info">
-                        <h1>Weather Details</h1>
-                        <div class="weather-data">
-                            <p class="weather-description">
-                                Cloudy
-                            </p>
-                            <p class="weather-description-value">12%</p>
-                        </div>
-                        <div class="weather-data">
-                            <p class="weather-description">
-                                Humidity
-                            </p>
-                            <p class="weather-description-value">78%</p>
-                        </div>
-                        <div class="weather-data">
-                            <p class="weather-description">
-                                Wind
-                            </p>
-                            <p class="weather-description-value">1km/h</p>
-                        </div>
-                        <div class="weather-data">
-                            <p class="weather-description">
-                                Rain
-                            </p>
-                            <p class="weather-description-value">0mm</p>
-                        </div>
-                    </div>
-                </div>
-            <!-- </div> -->
-        </div>
-    </main>
-</body>
-</html> 
+					</div>
+				</div>
+			</div>
+		</main>
+		<script src="main.js"></script>
+	</body>
+</html>

@@ -8,6 +8,17 @@
 	width: 80%;
 	margin: auto;
 }
+
+.submit-btn {
+	border: none;
+	background: transparent;
+	outline: none;
+}
+
+.submit-btn:hover{
+	cursor: pointer;
+}
+
 main {
 	height: 100vh;
 	width: 100%;
@@ -43,7 +54,7 @@ main {
 }
 .left .left-info .temperature {
 	color: #f3f8fc;
-	font-size: 3rem;
+	font-size: 1.5rem;
 	margin-right: 1rem;
 }
 
@@ -54,11 +65,11 @@ main {
 
 .left .left-info .weather {
 	color: #f3f8fc;
-}
-.left .left-info img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
+	display: flex;
+	flex-direction: column;
+	align-items:center;
+	margin-top: -1rem;
+	
 }
 
 .right {
@@ -148,23 +159,33 @@ main {
 		margin-bottom: 0.8rem;
 	}
 
+	.left .left-info .weather {
+		color: #f3f8fc;
+		display: unset;
+		flex-direction: unset;
+		align-items:unset;
+		margin-top: unset;
+		
+	}
+
 	.right .weather-info h1 {
 		padding: 1.5rem 0;
 	}
+
 }
 
-@media only screen and (min-width: 541px) and (max-width: 767px){
-    .left .left-info{
-        display: unset;
-    }
+@media only screen and (min-width: 541px) and (max-width: 767px) {
+	.left .left-info {
+		display: unset;
+	}
 
-    .right .weather-content form {
-        width: 100%;
-    }
+	.right .weather-content form {
+		width: 100%;
+	}
 
-    .right .weather-content input{
-        width: 100%;
-    }
+	.right .weather-content input {
+		width: 100%;
+	}
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
