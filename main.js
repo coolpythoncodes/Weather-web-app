@@ -51,7 +51,7 @@ if (navigator.geolocation) {
 		lat = position.coords.latitude;
 
 		const apiCurrentLocationUrl = `${api.baseUrl}?lat=${lat}&lon=${long}&units=metric&appid=${api.key}`;
-		console.log(apiCurrentLocationUrl);
+		// console.log(apiCurrentLocationUrl);
 	});
 }
 
@@ -135,13 +135,13 @@ const getWeatherData = async function (query) {
 
 		clearData();
 
-        console.log(weatherData)
+        // console.log(weatherData)
         if (weatherData.name) {
             
             if (!history.includes(weatherData.name)) {
                 if (history.length < 3) {
                     history.push(weatherData.name);
-                    console.log("doesn't have name")
+                    // console.log("doesn't have name")
                     // list_of_previous.appendChild(previous_item);
                     const previous_item = document.createElement("li");
                     // history.map((value) => {
@@ -166,7 +166,7 @@ const getWeatherData = async function (query) {
                 // });
             }
             // previous_items.textContent()
-            console.log(history);
+            // console.log(history);
     
             weatherHeading.innerText = "Weather Details";
     
@@ -201,7 +201,7 @@ const getWeatherData = async function (query) {
 		clearData();
 		city.innerText = "Location not found";
 		weatherHeading.innerText = "Something went wrong";
-		console.log("Opps", error);
+		// console.log("Opps", error);
 	}
 };
 
