@@ -209,32 +209,3 @@ const getWeatherData = async function (query) {
 
 form.addEventListener("submit", setQuery);
 
-const xyz = () => {
-	weatherHeading.innerText = "Weather Details";
-
-	city.innerText = weatherData.name;
-
-	temperature.innerHTML = `<h1>${Math.round(
-		weatherData.main?.temp
-	)}<span>&#176;</span>C</h1>`;
-
-	weatherImage.style.display = "block";
-	weatherImage.src = `http://openweathermap.org/img/wn/${weatherData?.weather[0]?.icon}.png`;
-
-	weatherCondition.innerText = weatherData?.weather[0]?.description;
-
-	// wind weatherData
-	wind.innerText = "Wind";
-	windSpeed.innerText = `${weatherData?.wind?.speed}m/s`;
-
-	// Humidity data
-	humidityText.innerText = "Humidity";
-	humidity.innerText = `${weatherData?.main?.humidity}%`;
-
-	// Cloud data
-	cloudy.innerText = "Cloudy";
-	cloud.innerText = `${weatherData?.clouds?.all}%`;
-
-	// Time data
-	time.innerText = `${day}, ${date} ${month} ${year}`;
-};
